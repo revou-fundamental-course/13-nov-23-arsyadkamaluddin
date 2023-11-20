@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fadbba;
+    padding-bottom: 240px;
+}
+#home{
+    margin-bottom: 100px;
+}
+nav{
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6bd80;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    width: 100vw;
+}
+.nav-logo img{
+    width: 50px;
+}
+.menu{
+    display: inline-block;
+    /* background-color: antiquewhite; */
+    background-color: #fadbba;
+    padding: 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+header section{
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+header section h3{
+    font-size: 3em;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-style: normal;
+}
+.top-content{
+    padding: 0 10vw 0 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.left-top-content{
+    width: 60%;
+}
+.formulir{
+    background-color: #f6bd80;
+    border-radius: 5px;
+    padding: 40px;
+    
+}
+.figure{
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/figure.webp");
+    background-size: cover;
+}
+.right-top-content{
+    width: 35%;
+}
+input[type="button"]{
+    margin-top: 30px;
+    background-color: #ffa94e;
+    font-weight: 600;
+}
+input[type="button"]:hover,.menu:hover{
+    transform: scale(1.01);
+    background-color: #ff911c;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+form input, form select{
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+}
+.space-package{
+    background-color: #f6bd80;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 3.5em;
+    font-weight: 600;
+}
+.testi{;
+    padding: 20px 10% 0 10%;
+    margin: 40px 0 40px 0;
+}
+.icon{
+    background-color: #f6bd80;
+    border-radius: 50%;
+    padding: 8px;
+}
+.testi-sumber{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.testi-profile{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.top-content article{
+    padding: 20px 10% 0 10%;
+    width: 85%;
+}
+.service{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.services-section{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.services-number{
+    background-color: #f6bd80;
+    margin-right: 15px;
+    width: 38px;
+    height: 38px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+.package{
+    margin-top: 80px;
+    padding: 0 10vw 0 10vw;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.package-grup{
+    max-width: 350px;
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+}
+.package-title{
+    font-weight: 600;
+    font-style: bold;
+    margin-bottom: 20px;
+}
+footer{
+    text-align: center;
+    margin-top: 80px;
+    width: 50vw;
+    margin-left: 25vw;
+}
+footer h3{
+    font-size: 2.8em;
+}
+.cta{
+    padding: 10px;
+    width: 160px;
+    margin: auto;
+    background-color: #ff911c;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+@media screen and (max-width: 992px) {
+    .right-top-content{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .left-top-content{
+        width: 100%;
+    }
+    .package-grup{
+        max-width: 90vw;
+    }
+    .space-package{
+        font-size: 2em;
+    }
+    footer{
+        width: 80vw;
+        margin-left: 5vw;
+    }
+    .cta{
+        width: 90vw;
+    }
+}
