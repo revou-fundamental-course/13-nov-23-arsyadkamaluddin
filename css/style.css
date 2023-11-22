@@ -26,6 +26,7 @@ nav {
   top: 0;
   width: 100vw;
   font-size: 0.8em;
+  z-index: 100;
 }
 .nav-logo img {
   width: 50px;
@@ -251,6 +252,13 @@ body::-webkit-scrollbar{
     }
 }
 @media screen and (max-width: 600px) {
+  nav{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-menu{
+    /* display: none; */
+  }
     body{
         font-size: 15px;
         padding-bottom: 20px;
