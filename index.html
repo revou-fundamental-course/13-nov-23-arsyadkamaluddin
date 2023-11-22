@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="home">fgtgd</div>
+    <div id="home">f</div>
     <header>
       <nav>
         <div class="nav-logo">
           <a href=""><img src="assets/logo.png" alt="" /></a>
         </div>
         <div class="nav-menu">
-          <span class="menu"><a href="#home">Home</a></span>
-          <span class="menu"><a href="#package">Our Package</a></span>
-          <span class="menu"><a href="#call">Call Us</a></span>
+          <span class="menu"><a href="#home">Beranda</a></span>
+          <span class="menu"><a href="#package">Paket</a></span>
+          <span class="menu"><a href="#call">Kontak</a></span>
         </div>
       </nav>
       <section>
@@ -28,6 +28,7 @@
       <div class="top-content">
         <div class="left-top-content">
           <div class="figure"></div>
+          <button id="tombol">Lanut</button>
           <div class="testi">
             <div class="testi-text">
               <p>"Liburan menjadi blablabla dengan"</p>
@@ -43,31 +44,30 @@
           <article>
             <b
               ><p>
-                Use this space to provide users with more information about your
-                offer. Consider it a follow-up to your headline and explain the
-                benefits of your service or product
+                Jelajahi Dunia dengan Pengalaman yang Tak Terlupakan Bersama
+                Arsya Travel
               </p></b
             >
             <div class="service">
               <div class="services-section">
                 <p class="services-number">1</p>
                 <p class="services-text">
-                  Your first feature, written in the form of a benefit
-                  statement.
+                  Hadirkan petualangan tak terlupakan dengan tur kuliner,
+                  aktivitas budaya, dan interaksi lokal.
                 </p>
               </div>
               <div class="services-section">
                 <p class="services-number">2</p>
                 <p class="services-text">
-                  Your first feature, written in the form of a benefit
-                  statement.
+                  Jelajahi dunia dengan impak lingkungan minimal, destinasi
+                  ramah lingkungan dan ekowisata.
                 </p>
               </div>
               <div class="services-section">
                 <p class="services-number">3</p>
                 <p class="services-text">
-                  Your first feature, written in the form of a benefit
-                  statement.
+                  Nikmati liburan keluarga yang tak terlupakan dengan fasilitas
+                  ramah keluarga dan tur khusus.
                 </p>
               </div>
             </div>
@@ -75,38 +75,45 @@
         </div>
         <div class="right-top-content">
           <div class="formulir" id="call">
-            <h3>Contact Us</h3>
-            <p>Sales akan menghubungi anda 2X24jam</p>
-            <form action="">
-              <label for="nama"><b>Your Name :</b></label>
+            <h3>Hubungi kami</h3>
+            <p>Sales akan menghubungi anda 2 X 24 jam</p>
+            <form method="post" action="" name="formulir">
+              <label for="nama"><b>Nama :</b></label>
               <input
                 type="text"
-                name=""
+                name="nama"
                 id="nama"
-                placeholder="First and last name"
+                placeholder="Nama Anda"
               />
-              <label for="email"><b>Email address :</b></label>
+              <span class="invalid" id="invalidNama">Mohon masukkan nama</span>
+              <label for="email"><b>Alamat email :</b></label>
               <input
                 type="email"
-                name=""
+                name="email"
                 id="email"
                 placeholder="example@email.com"
               />
-              <label for="tertarik"><b>What are you interested in ?</b></label>
-              <select name="" id="tertarik">
-                <option value="Gatau">Gatau</option>
-                <option value="Gatau">Gatau</option>
-                <option value="Gatau">Gatau</option>
-                <option value="Gatau">Gatau</option>
+              <span class="invalid" id="invalidEmail"
+                >Mohon masukkan email yang benar</span
+              >
+              <label for="tertarik"><b>Apa ketertarikan anda ?</b></label>
+              <select name="tertarik" id="tertarik">
+                <option value="What are you interested in ?">
+                  Apa ketertarikan anda ?
+                </option>
+                <option value="Gatau">Kuliner</option>
+                <option value="Gatau">Alam</option>
+                <option value="Gatau">Keluarga</option>
               </select>
-              <input type="button" value="SEND" />
+              <span class="invalid" id="invalidTertarik">Mohon pilih satu</span>
+              <input type="submit" value="SEND" />
             </form>
           </div>
         </div>
       </div>
 
       <section id="package" class="space-package">
-        <p>Our Package</p>
+        <p>Paket Pilihan</p>
       </section>
       <section class="package">
         <div class="package-grup">
@@ -114,10 +121,10 @@
             <img src="assets/logo.png" width="50px" class="icon" />
           </div>
           <div class="package-text">
-            <div class="package-title">Bali</div>
+            <div class="package-title">Kuliner Bangkok</div>
             <div class="package-desc">
-              Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang
-              menarik
+              Nikmati kelezatan kulinernya, kunjungi tempat-tempat ikonik, dan
+              rasakan kehidupan malam yang dinamis di Bangkok.
             </div>
           </div>
         </div>
@@ -126,10 +133,10 @@
             <img src="assets/logo.png" width="50px" class="icon" />
           </div>
           <div class="package-text">
-            <div class="package-title">Bali</div>
+            <div class="package-title">Ekowisata Costa Rica</div>
             <div class="package-desc">
-              Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang
-              menarik
+              Telusuri keindahan alam Costa Rica, terlibat dalam konservasi, dan
+              amati kehidupan liar yang memukau.
             </div>
           </div>
         </div>
@@ -138,10 +145,10 @@
             <img src="assets/logo.png" width="50px" class="icon" />
           </div>
           <div class="package-text">
-            <div class="package-title">Bali</div>
+            <div class="package-title">Tur Keluarga Pulau Phuket</div>
             <div class="package-desc">
-              Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang
-              menarik
+              Dapatkan momen keluarga tak terlupakan di pantai indah Phuket
+              dengan fasilitas ramah anak dan aktivitas seru.
             </div>
           </div>
         </div>
@@ -150,10 +157,10 @@
             <img src="assets/logo.png" width="50px" class="icon" />
           </div>
           <div class="package-text">
-            <div class="package-title">Bali</div>
+            <div class="package-title">Safari Serengeti</div>
             <div class="package-desc">
-              Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang
-              menarik
+              Saksikan keajaiban alam Afrika, bersafari melalui padang rumput
+              dan melihat migrasi luar biasa binatang liar.
             </div>
           </div>
         </div>
@@ -162,10 +169,10 @@
             <img src="assets/logo.png" width="50px" class="icon" />
           </div>
           <div class="package-text">
-            <div class="package-title">Bali</div>
+            <div class="package-title">Budaya Kyoto</div>
             <div class="package-desc">
-              Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang
-              menarik
+              Menyelami keindahan warisan budaya Jepang, kunjungi kuil-kuil
+              indah, dan ikuti tradisi lokal di Kyoto.
             </div>
           </div>
         </div>
@@ -174,24 +181,26 @@
             <img src="assets/logo.png" width="50px" class="icon" />
           </div>
           <div class="package-text">
-            <div class="package-title">Bali</div>
+            <div class="package-title">Alam Patagonia</div>
             <div class="package-desc">
-              Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang
-              menarik
+              Jelajahi keindahan alam Patagonia, trekking di pegunungan, dan
+              nikmati pemandangan spektakuler danau dan gletser.
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <h3>Just forget it</h3>
+      <h3 class="big">#ExploreDreamDiscover</h3>
+      <h3 class="small">#ExploreDream Discover</h3>
       <p>
-        Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod
-        sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel
-        erat fringilla,
+        Temukan Dunia Baru Bersama Arsya Travel. Jelajahi, Rasakan, Ciptakan
+        Kenangan.
       </p>
 
-      <a href="https://wa.me/6289636055420"><div class="cta">Want it</div></a>
+      <a href="https://wa.me/6289636055420"
+        ><div class="cta">Jelajahi !</div></a
+      >
       <a href=""><img src="" alt="" /></a>
     </footer>
     <script src="js/script.js"></script>
